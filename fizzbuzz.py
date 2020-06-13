@@ -6,13 +6,21 @@
 
 
 # Function to check whether the given integer is Fizz, Buzz or FizzBuzz.
-def fizz_or_buzz():
-    pass
+def fizz_or_buzz(number):
+    if (number % 3 == 0) and (number % 5 == 0):
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
 
 
 # Main function to hold main execution code.
 def main():
-    pass
+    for i in range(1, 51):
+        fizz_or_buzz(i)
 
 
 # Call main function to run upon execution of file.
